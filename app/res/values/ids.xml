@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 作息行里的节次标签：动画时用来按「第 N 节」定位对应的行 -->
+    <item name="period_no" type="id" />
+</resources>

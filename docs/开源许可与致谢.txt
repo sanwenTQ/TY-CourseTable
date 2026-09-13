@@ -1,0 +1,64 @@
+TY课程表 7.12 — 第三方组件声明 (NOTICE)
+==========================================
+
+（本文件与安装包内 app/assets/licenses/NOTICE.txt 内容一致）
+
+本应用包含以下第三方开源软件与资源，版权归各自作者所有。
+本应用自身代码以 MIT 许可开源（见仓库根目录 LICENSE）。
+
+—— 随应用分发的第三方组件 ——
+
+1) PdfBox-Android 2.0.27.0
+   提供方：Tom Roush (https://github.com/TomRoush/PdfBox-Android)
+   许可证：Apache License 2.0
+   用途：PDF 解析（含 FontBox、Harmony awt 兼容层移植）
+
+2) Apache PDFBox / Apache FontBox 2.0.x
+   版权：Copyright 2002-2021 The Apache Software Foundation
+   许可证：Apache License 2.0
+   用途：PDF 与字体解析的原始实现
+
+3) Apache Harmony（java.awt 兼容层，随 PdfBox-Android 分发）
+   版权：Copyright The Apache Software Foundation
+   许可证：Apache License 2.0
+
+4) Adobe CMap 资源（assets/com/tom_roush/fontbox/resources/cmap）
+   版权：Copyright 1990-2002 Adobe Systems Incorporated
+   说明：随 Apache PDFBox / FontBox 分发，用于中日韩编码映射
+
+5) Adobe Core 14 字体度量 AFM（assets/com/tom_roush/pdfbox/resources/afm）
+   版权：Copyright Adobe Systems Incorporated
+   说明：随 Apache PDFBox 分发，用于核心字体宽度计算
+
+6) Liberation Sans Regular（assets/com/tom_roush/pdfbox/resources/ttf）
+   版权：Copyright 2012 Red Hat, Inc. / DigiTecs Inc.
+   许可证：SIL Open Font License 1.1
+   说明：PDFBox 在设备缺少原字体时使用的兜底字体
+
+7) Unicode 数据文件（assets/com/tom_roush/fontbox/resources/unicode/Scripts.txt）
+   版权：Copyright 1991-2021 Unicode, Inc.
+   许可证：Unicode License
+
+8) HarmonyOS Sans SC Version 1.0（已做字符子集化）
+   版权：Copyright 2021 Huawei Device Co., Ltd. All Rights Reserved.
+   出品方（字体 name 表）：Huawei Device Co., Ltd & Hanyi Fonts（汉仪）
+   来源：HarmonyOS Sans 官方发布（华为开发者联盟字体页面）
+   说明：字体以「免费商用」方式提供，版权归华为与汉仪所有，
+         不适用本应用的 MIT 许可；再分发或商用前请以官方最新条款为准，
+         官方页面的许可全文未随本应用一并分发。
+   用途：应用界面字体（assets/fonts/HarmonyOS_Sans_SC_Regular.ttf）
+
+—— 仅构建期使用，不随应用分发 ——
+
+ - Android SDK Build-Tools (aapt2 / apksigner / zipalign) — Google — Apache-2.0
+ - d8 (R8) — Google — BSD-3-Clause
+ - OpenJDK 17 — GPLv2 with Classpath Exception
+ - fonttools 4.65 — MIT（用于生成字体子集）
+ - xlwt 1.3 — BSD（用于生成解析回归测试所需的 .xls 文件）
+
+—— 许可证全文 ——
+
+  app/assets/licenses/Apache-2.0.txt   Apache License 2.0
+  app/assets/licenses/OFL-1.1.txt      SIL Open Font License 1.1
+  app/assets/licenses/Unicode.txt      Unicode License
+  app/assets/licenses/MIT.txt          本应用自身代码的 MIT 许可

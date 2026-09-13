@@ -1,0 +1,17 @@
+# 构建产物
+build/
+*.idsig
+
+# 签名密钥（务必自己保管，不要提交）
+keystore.jks
+*.keystore
+*.jks
+
+# 依赖缓存（build.sh 会自动下载）
+libs/*.aar
+
+# 编辑器/系统
+.DS_Store
+*.iml
+.idea/
+libs/aar/
